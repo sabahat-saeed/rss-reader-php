@@ -6,11 +6,11 @@
 * Make sure you have PHP installed.
 
 ## ⚙️ Instructions for run this programe
-* When the program is run in the terminal it must be run as a command with parameters, for example:
+* When the program is run in the terminal it run as a command with parameters, for example:
 
 - php rssreader.php --output=text --sortkey=title --sortorder=DESC
 
-* When it is run in browser-mode it must be run with PHPs built-in development server,like this:
+* When it is run in browser-mode it run with PHPs built-in development server,like this:
 
 - php -S localhost:8080
 
