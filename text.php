@@ -1,17 +1,15 @@
 
 <?php
 if (count($data) > 0) {
-    $text = "";
-    $text .= "Items \n";
+    echo "Items \n";
     foreach ($data as $key => $value) {
-        $text .= "Item : " . ($key + 1) . "\n";
-        $text .= "Title : " . $value['title'] . "\n";
-        $text .= "Description : " . $value['description'] . "\n";
-        $text .= "Published : " . $value['pubDate'] . "\n";
-        $text .= "\n";
+        echo "Item : " . ($key + 1) . "\n";
+        echo "Title : " . $value['title'] . "\n";
+        echo "Description: ".$value['description'] . "\n";
+        echo "Published : " . $value['pubDate'] . "\n";
+        echo "\n";
     }
 } else {
-    $text .= "No record found</h3>";
+    echo "No record found</h3>";
 }
-echo $text;
 ?>

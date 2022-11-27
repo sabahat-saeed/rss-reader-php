@@ -1,9 +1,9 @@
 <?php
-include('Readfromxml.php');
-$sortKey = '';      //sortkey veriable for set value of orderkey  
+include('Readfromxml.php'); 
+$sortKey = 'pubDate';      //sortkey veriable for set value of orderkey  
 $sortOrder = 'asc'; //sortorder veriable for set sorting order and by default set order ascending  
-$output = 'html';
 
+$output = 'text';
 //this is for run script through command
 $options = getopt('', array("output:","sortkey::","sortorder::"));
 if(is_array($options)){

@@ -40,7 +40,7 @@ class ReadFromXml
     {
         try {
             $new = array();
-            if ($property == 'pubDate') {
+            if ($property == 'pubDate') {    //purpose of this condition is need to convert the pubdate   
                 foreach ($array as $value) {
                     $new[] = strtotime($value[$property]);
                 }
