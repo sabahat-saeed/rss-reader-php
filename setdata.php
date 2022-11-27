@@ -1,7 +1,7 @@
 <?php
 include('Readfromxml.php');
-$sortKey = '';
-$sortOrder = 'asc';
+$sortKey = '';      //sortkey veriable for set value of orderkey  
+$sortOrder = 'asc'; //sortorder veriable for set sorting order and by default set order ascending  
 $output = 'html';
 
 //this is for run script through command
@@ -16,9 +16,8 @@ if(is_array($options)){
     if(isset($options['sortorder']))
         $sortOrder = $options['sortorder'];
 
-}
-
-$urls = array(
+} 
+$urls = array(  //hard-coded xml urls in array 
     'http://www.voyagersfamily.ch/feed.xml',
     'http://www.rss-specifications.com/blog-feed.xml',
 );

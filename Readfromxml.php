@@ -36,7 +36,7 @@ class ReadFromXml
         }
     }
 
-    function sortArray($array, $property)   //this function is for set sort array on bases of ( property/order key/ sort key) which provided in this function.
+    function sortArray($array, $property)   //this function is for set sort array on bases of order key which provided in this function.
     {
         try {
             $new = array();
